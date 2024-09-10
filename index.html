@@ -6,7 +6,7 @@
     <title>Portfolio Website</title>
     <link rel="icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
-    <link
+    <link 
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
@@ -14,6 +14,7 @@
   <body>
 
     <header class="header">
+
       <a href="#" class="logo"><span>Justin Dy</span></a>
 
       <ul class="nav-links">
@@ -77,18 +78,26 @@
         <div class="grid">
           <div class="grid-card">
             <i class="fa-brands fa-connectdevelop"></i>
-            <span>Application Development Intern</span>
+            <span>Programming Assistant</span>
             <h3>Current</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, iste.</p>
+            <p>Programming Assistant at the University of Iowa, Iowa Memorial Union.</p>
           </div>
 
           <div class="grid-card">
             <i class="fa-solid fa-code"></i>
             <span>Fullstack Developer</span>
             <h3>2 Years</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, iste.</p>
+            <p>Self-taught full-stack web developer/designer interested in machine learning, cybersecurity and the cloud.</p>
           </div>
-          <img src="image.jpg" alt="" />
+
+          <div class="grid">
+            <div class="grid-card">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>College Student</span>
+              <h3>2023 - 2027</h3>
+              <p>Sophomore studying computer science at the University of Iowa.</p>
+            </div>
+          
       </div>
 
     </section>
@@ -104,18 +113,18 @@
           <h3>Facebook Marketplace Clone</h3>
           Full-stack project from scratch, fully interactive, uses Google API to login and use Google Maps, uses MongoDB to store website activity data.
           <div class="btn-group">
-            <div class="btn">Demo</div>
-            <div class="btn">Github Repo</div>
+            <div id="live-demo-btn" class="btn">Quick Demo</div>
+            <div id="github-repo-btn" class="btn">Github Repo</div>
           </div>
         </div>
 
         <div class="project-card">
           <img src="project-2.png" alt="">
-          <h3>Personal Portfolio Website</h3>
+          <h3>Freelance and portfolio Website</h3>
           <p>RGB inspired fully interactive personal portfolio website built from scratch. Front-end only. </p>
           <div class="btn-group">
-            <div class="btn">Demo</div>
-            <div class="btn">Github Repo</div>
+            <div id="live-demo-btn1" class="btn">Quick Demo</div>
+            <div id="github-repo-btn1" class="btn">Github Repo</div>
           </div>
         </div>
 
@@ -124,27 +133,29 @@
           <h3>URL to Video</h3>
           Full-stack project that takes a URL and transforms it into a short video with voiceover, using OpenAI API.
           <div class="btn-group">
-            <div class="btn">Demo</div>
-            <div class="btn">Github Repo</div>
+            <div id="github-repo-btn2" class="btn">Github Repo</div>
           </div>
         </div>
       </div>
 
     </section>
 
-    <section class="contact" id="contact">
-      
+    <form action="https://api.web3forms.com/submit" method="POST">
       <div class="input-box">
-
-        <h2 class="section-title">Contact Me</h2>
-
-        <div class="input">
-          <input type="text" placeholder="example@email.com">
-          <i class="fa-solid fa-envelope"></i>
-        </div>
-
-        <div class="btn">Submit</div>
+          <h2 class="section-title">Contact Me</h2>
+          <input type="hidden" name="access_key" value="88b53fec-0f3f-469f-aa4d-9be4c4ad969e">
+          <div class="input">
+              <input type="email" name="email" placeholder="example@email.com" required>
+              <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="input">
+              <input type="text" name="message" placeholder="Your Message:" required>
+              <i class="fa-solid fa-message"></i>
+          </div>
+              <button type="submit" class="submit-btn">Submit</button>
+          </div>
       </div>
+  </form>
       
     </section>
 
