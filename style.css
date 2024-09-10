@@ -265,6 +265,7 @@ section {
   gap: 2rem;
   margin-top: 5rem;
 }
+
 .input-box input {
   position: relative;
   border-radius: 3rem;
@@ -284,6 +285,20 @@ section {
   top: 50%;
   left: 10px;
   transform: translate(50%, -50%);
+}
+.submit-btn {
+  border-radius: 3rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid black;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease-in;
+  text-wrap: nowrap;
+  }
+
+.submit-btn:hover {
+  background-color: black;
+  color: white;
 }
 
 footer {
